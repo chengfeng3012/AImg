@@ -1,0 +1,25 @@
+# aimg sample fs_config.txt
+# format: <path> <uid> <gid> <mode> [capabilities=0x...]
+# mode is octal; setuid/setgid/sticky bits are preserved (04755, 02755, 01777).
+
+/ 0 0 0755
+/system 0 0 0755
+/system/bin 0 2000 0755
+/system/bin/sh 0 2000 0755
+/system/bin/toybox 0 2000 0755
+/system/bin/app_process 0 2000 0755
+/system/bin/su 0 0 04755 capabilities=0x40
+/system/xbin 0 0 0755
+/system/etc 0 0 0755
+/system/etc/build.prop 0 0 0644
+/system/etc/init 0 0 0755
+/system/etc/init/hw 0 0 0755
+/system/etc/init/hw/init.rc 0 0 0750
+/system/app 0 0 0755
+/system/priv-app 0 0 0755
+/system/lib64 0 0 0755
+/system/framework 0 0 0755
+/vendor 0 2000 0755
+/vendor/bin 0 2000 0755
+/vendor/etc 0 0 0755
+/product 0 0 0755

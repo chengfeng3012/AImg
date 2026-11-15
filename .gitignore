@@ -1,0 +1,7 @@
+/target
+/.verify
+*.tgz
+/vendor
+/dist
+*.img
+python/.pytest_cache/

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyaimg"
+version = "0.1.0"
+description = "Typed Python API for the aimg Android image toolchain (sparse/super/boot/payload/dat/ext4)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "AndroidImg_Rust" }]
+keywords = ["android", "super.img", "payload.bin", "ext4", "sparse", "ota"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["pyaimg"]
+
+[tool.setuptools.package-data]
+pyaimg = ["py.typed", "*.pyi"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
