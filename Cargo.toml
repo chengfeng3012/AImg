@@ -3,7 +3,7 @@ name = "aimg"
 version = "0.1.0"
 edition = "2021"
 description = "Pure-Rust Android image toolchain for Windows (text-config driven permissions)"
-license = "MIT"
+license = "GPL-3.0-only"
 
 [[bin]]
 name = "aimg"

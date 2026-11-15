@@ -1,6 +1,7 @@
 ---
 name: aimg-image-ops
 description: Unpack, inspect, modify and rebuild Android partition images with the pure-Rust `aimg` toolchain (Windows/Linux, no root, no mount, no loop device, no NTFS ACLs). Covers sparse images, super.img / dynamic partitions (LP metadata), boot/recovery/vendor_boot, payload.bin (A/B OTA), legacy .dat OTA packages, and ext4 read/build with uid/gid/mode/SELinux taken from text configs (fs_config, file_contexts, meta.txt). Use when a task involves Android images, OTA packages, super/dynamic partitions, ext4 trees, or preserving SELinux contexts and file capabilities while repacking.
+license: GPL-3.0-only
 ---
 
 # aimg image operations

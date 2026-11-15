@@ -461,3 +461,7 @@ cp -r skills/aimg-image-ops ~/.agents/skills/
 ```text
 Release(tag) --Gitea Actions--> tarball --> 单次 commit --> GitHub push --> test/build --> Release(两个包)
 ```
+
+## 9. License
+
+GPL-3.0-only，全文见 [LICENSE](LICENSE)。
